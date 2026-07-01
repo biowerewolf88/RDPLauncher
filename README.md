@@ -10,18 +10,18 @@ CloseAfterLaunch=True # действие программы при подклю�
  
 [Servers]
 
-MainIP=<ip> #адрес
+MainIP=0.0.0.0 #адрес основной
 
-MainPort=<port> #порт 
+MainPort=3369 #порт основной
  
-BackupIP=<ip> #адрес
+BackupIP=0.0.0.0 #адрес резервный
 
-BackupPort=<port> #порт
+BackupPort=3369 #порт резервный
  
 [Profiles] 
 
-Бухгалтер=buh.rdp|buh_rezerv.rdp #имена файлов
+Бухгалтер=buh.rdp|buh_rezerv.rdp #имена файлов для запуска
 
-Кассир=kassir.rdp|kassir_rezerv.rdp #имена файлов
+Кассир=kassir.rdp|kassir_rezerv.rdp #имена файлов для запуска
 
-Менеджер=manager.rdp|manager_rezerv.rdp #имена файлов
+Менеджер=manager.rdp|manager_rezerv.rdp #имена файлов для запуска
