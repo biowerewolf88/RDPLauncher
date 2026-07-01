@@ -28,22 +28,17 @@
 ### Пример
 
 ```ini
-[Варианты]
-
+[Options]
 CloseAfterLaunch=True
-; false - не закрывать программу
-; true  - закрыть после запуска подключения
 
-[Серверы]
-
+[Servers]
 MainIP=0.0.0.0
 MainPort=3369
 
 BackupIP=0.0.0.0
 BackupPort=3369
 
-[Профили]
-
+[Profiles]
 Бухгалтер=buh.rdp|buh_rezerv.rdp
 Кассир=kassir.rdp|kassir_rezerv.rdp
 Менеджер=manager.rdp|manager_rezerv.rdp
