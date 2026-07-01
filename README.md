@@ -1,2 +1,19 @@
 # RDPLauncher
-RDPLauncher - launch *.RPD files for office workers who have primary and backup communication channels.
+- запуск файлов *.RPD для офисных работников, которые имеют основной и резервный каналы связи. 
+Основная идея избавить запускать подключения по очереди при сбоях. Программа при запуске проверяет IP:PORT и отмечает рабочий, возможно несколько конфигураций сотрудников. Программа хранит в настройках только IP:PORT в "config.ini", никаких паролей не запоминает.
+
+Пример конфигурации:
+[Options]
+CloseAfterLaunch=True # действие программы при подключении false - не закрываться | true - закрыться
+
+[Servers]
+MainIP=<ip> #адрес
+MainPort=<port> #порт
+
+BackupIP=<ip> #адрес
+BackupPort=<port> #порт
+
+[Profiles]
+Бухгалтер=buh.rdp|buh_rezerv.rdp #имена файлов
+Кассир=kassir.rdp|kassir_rezerv.rdp #имена файлов
+Менеджер=manager.rdp|manager_rezerv.rdp #имена файлов
